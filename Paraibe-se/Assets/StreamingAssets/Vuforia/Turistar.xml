@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
-    <ImageTarget name="museu_3_pandeiros" size="1.000000 0.665000" />
+    <ImageTarget name="pioneiros" size="1.000000 0.550394" />
+    <ImageTarget name="parquedopovo" size="1.000000 0.562500" />
+    <ImageTarget name="parquedacrianca" size="1.000000 0.562500" />
+    <ImageTarget name="museudoalgodao" size="1.000000 0.562500" />
+    <ImageTarget name="museudigital" size="1.000000 0.562500" />
+    <ImageTarget name="museudearte" size="1.000000 0.562500" />
+    <ImageTarget name="farradabudega" size="1.000000 0.562500" />
+    <ImageTarget name="catedral" size="1.000000 0.562500" />
+    <ImageTarget name="bardocuscuz" size="1.000000 0.562500" />
   </Tracking>
 </QCARConfig>

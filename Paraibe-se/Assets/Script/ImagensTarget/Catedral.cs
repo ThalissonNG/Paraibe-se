@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
 
-public class Object1 : MonoBehaviour
+public class Catedral : MonoBehaviour
 {
-    [SerializeField] private int MuseuDeArtePopular = 0;
+    [SerializeField] private int CatedralINT = 0;
 
     private ObserverBehaviour mObserverBehaviour;
     void Awake()
@@ -22,9 +22,9 @@ public class Object1 : MonoBehaviour
 
     public void TargetInScene()
     {
-        MuseuDeArtePopular = 1;
-        PlayerPrefs.SetInt("museudeartepopular", MuseuDeArtePopular);
-        Debug.Log(MuseuDeArtePopular);
+        CatedralINT = 1;
+        PlayerPrefs.SetInt("catedral", CatedralINT);
+        Debug.Log(CatedralINT);
     }
     IEnumerator DestroyObject()
     {
