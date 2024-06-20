@@ -6,10 +6,10 @@
 </p> -->
 
 <p align="center">
-  <a href="#-tecnologias">Thalisson Manoel</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Gabriel França</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Edailton Filho</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">João Felipe</a>
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a><!--&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; -->
+  <!-- <a href="#memo-licença">João Felipe</a> -->
 </p>
 
 <!-- <p align="center">
@@ -36,7 +36,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O DevLinks é um agregador de links para usar como cartão de visitas online.
+<div style="display: flex; align-items: flex-start;">
+  <img alt="TelaMenu" src="TelaMenu.png" width="30%">
+  <p style="margin-left: 20px; font-size: 16px" >
+    Se trata de um “software” com dinâmica de “registro & recompensa” diretamente vinculado à trilha promovida pelo projeto PARAIBE-SE. O usuário estará analisando pontos turísticos determinados e que fazem parte de um grande mosaico, completando o “quebra-cabeça” uma recompensa será concedida.
+  </p>
+</div>
 
 - [Acesse o projeto finalizado, online](https://thalissonng.github.io/PrimeiroSite-HTML-CSS/)
 
