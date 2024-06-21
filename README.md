@@ -27,6 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Unity
 - C#
 - Vuforia SDK
+- Augmented Reality
 - Git e Github
 - Figma
 - Illustrator
