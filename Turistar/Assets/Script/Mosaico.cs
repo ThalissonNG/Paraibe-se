@@ -1,9 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PassaporteManager : MonoBehaviour
+public class Mosaico : MonoBehaviour
 {
+    [SerializeField] private GameObject[] mosaico = new GameObject[9];
+    public int ValorDoMosaico = -1;
+
     [SerializeField] private int ValorMuseuArtePopular;
     [SerializeField] private int ValorMonumentoFarra;
     [SerializeField] private int ValorMuseuDeAlgodao;
@@ -14,15 +18,6 @@ public class PassaporteManager : MonoBehaviour
     [SerializeField] private int ValorParqueDaCrianca;
     [SerializeField] private int ValorPioneiros;
 
-    [SerializeField] private GameObject CarimboMuseuDeArte;
-    [SerializeField] private GameObject CarimboMonumentoFarra;
-    [SerializeField] private GameObject CarimboMuseuDeAlgodao;
-    [SerializeField] private GameObject CarimboParqueDoPovo;
-    [SerializeField] private GameObject CarimboCatedral;
-    [SerializeField] private GameObject CarimboBarDoCuscuz;
-    [SerializeField] private GameObject CarimboMuseuDigital;
-    [SerializeField] private GameObject CarimboParqueDaCrianca;
-    [SerializeField] private GameObject CarimboPioneiros;
     void Start()
     {
         ValorMuseuArtePopular = PlayerPrefs.GetInt("museudeartepopular");
@@ -35,44 +30,67 @@ public class PassaporteManager : MonoBehaviour
         ValorParqueDoPovo = PlayerPrefs.GetInt("parquedopovo");
         ValorPioneiros = PlayerPrefs.GetInt("pioneiros");
     }
-
+    // Update is called once per frame
     void Update()
     {
-        if(ValorMuseuArtePopular == 1)
+        if (ValorMuseuArtePopular == 1)
         {
-            CarimboMuseuDeArte.SetActive(true);
+            mosaico[0].SetActive(true);
         }
         if (ValorBarDoCuscuz == 1)
         {
-            CarimboBarDoCuscuz.SetActive(true);      
+            mosaico[1].SetActive(true);
         }
         if (ValorCatedral == 1)
         {
-            CarimboCatedral.SetActive(true);
+            mosaico[2].SetActive(true);
         }
         if (ValorMonumentoFarra == 1)
         {
-            CarimboMonumentoFarra.SetActive(true);
+            mosaico[3].SetActive(true);
         }
         if (ValorMuseuDigital == 1)
         {
-            CarimboMuseuDigital.SetActive(true);
+            mosaico[4].SetActive(true);
         }
         if (ValorMuseuDeAlgodao == 1)
         {
-            CarimboMuseuDeAlgodao.SetActive(true);
+            mosaico[5].SetActive(true);
         }
         if (ValorParqueDaCrianca == 1)
         {
-            CarimboParqueDaCrianca.SetActive(true);
+            mosaico[6].SetActive(true);
         }
         if (ValorParqueDoPovo == 1)
         {
-            CarimboParqueDoPovo.SetActive(true);
+            mosaico[7].SetActive(true);
         }
         if (ValorPioneiros == 1)
         {
-            CarimboPioneiros.SetActive(true);
+            mosaico[8].SetActive(true);
         }
+
+
+
+        //if (Input.GetMouseButtonDown(0)) 
+        //{
+        //    Debug.Log("apertoui");
+        //    ValorDoMosaico++;
+        //}
+        //if (ValorDoMosaico > 9)
+        //{
+        //    ValorDoMosaico = 10; 
+        //}
+        //else
+        //{
+        //    for (int i = 0; i < mosaico.Length; i++)
+        //    {
+        //        if (i == ValorDoMosaico)
+        //        {
+        //            mosaico[i].SetActive(true);
+        //        }
+        //    }
+        //}
     }
+
 }

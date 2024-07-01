@@ -25,6 +25,7 @@ public class FarraDaBudega : MonoBehaviour
         FarraDaBudegaINT = 1;
         PlayerPrefs.SetInt("farradabudega", FarraDaBudegaINT);
         Debug.Log(FarraDaBudegaINT);
+        StartCoroutine(DestroyObject());
     }
     IEnumerator DestroyObject()
     {

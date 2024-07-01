@@ -25,6 +25,7 @@ public class MuseuDigital : MonoBehaviour
         MuseuDigitalINT = 1;
         PlayerPrefs.SetInt("museudigital", MuseuDigitalINT);
         Debug.Log(MuseuDigitalINT);
+        StartCoroutine(DestroyObject());
     }
     IEnumerator DestroyObject()
     {

@@ -25,6 +25,7 @@ public class MuseuDeArtePopular: MonoBehaviour
         MuseuDeArtePopularINT = 1;
         PlayerPrefs.SetInt("museudeartepopular", MuseuDeArtePopularINT);
         Debug.Log(MuseuDeArtePopularINT);
+        StartCoroutine(DestroyObject());
     }
     IEnumerator DestroyObject()
     {

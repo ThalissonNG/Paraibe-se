@@ -25,6 +25,7 @@ public class ParqueDaCrianca : MonoBehaviour
         ParqueDaCriancaINT = 1;
         PlayerPrefs.SetInt("parquedacrianca", ParqueDaCriancaINT);
         Debug.Log(ParqueDaCriancaINT);
+        StartCoroutine(DestroyObject());
     }
     IEnumerator DestroyObject()
     {

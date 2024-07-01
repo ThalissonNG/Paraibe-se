@@ -25,6 +25,7 @@ public class BarDoCuscuz : MonoBehaviour
         BarDoCuscuzINT = 1;
         PlayerPrefs.SetInt("bardocuscuz", BarDoCuscuzINT);
         Debug.Log(BarDoCuscuzINT);
+        StartCoroutine(DestroyObject());
     }
     IEnumerator DestroyObject()
     {

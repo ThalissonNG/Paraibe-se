@@ -25,6 +25,7 @@ public class Catedral : MonoBehaviour
         CatedralINT = 1;
         PlayerPrefs.SetInt("catedral", CatedralINT);
         Debug.Log(CatedralINT);
+        StartCoroutine(DestroyObject());
     }
     IEnumerator DestroyObject()
     {

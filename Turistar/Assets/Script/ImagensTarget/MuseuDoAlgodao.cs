@@ -25,6 +25,7 @@ public class MuseuDoAlgodao : MonoBehaviour
         MuseuDoAlgodaoINT = 1;
         PlayerPrefs.SetInt("museudoalgodao", MuseuDoAlgodaoINT);
         Debug.Log(MuseuDoAlgodaoINT);
+        StartCoroutine(DestroyObject());
     }
     IEnumerator DestroyObject()
     {

@@ -25,6 +25,7 @@ public class Pioneiros : MonoBehaviour
         PioneirosINT = 1;
         PlayerPrefs.SetInt("pioneiros", PioneirosINT);
         Debug.Log(PioneirosINT);
+        StartCoroutine(DestroyObject());
     }
     IEnumerator DestroyObject()
     {
