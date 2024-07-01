@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Vuforia;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject VuforiaCam;
     [SerializeField] private string NomeUsuario;
     [SerializeField] private TextMeshProUGUI _NomeUsuario;
+    [SerializeField] private VuforiaBehaviour _VuforiaBehaviour;
 
 
     [SerializeField] private bool ArTrue = true;
@@ -40,10 +42,12 @@ public class GameManager : MonoBehaviour
     {
         if (ArTrue)
         {
+            _VuforiaBehaviour.enabled = false;
             MapaCG.SetActive(true);
         }
         else
         {
+            _VuforiaBehaviour.enabled = true;
             MapaCG.SetActive(false);
         }
     }
